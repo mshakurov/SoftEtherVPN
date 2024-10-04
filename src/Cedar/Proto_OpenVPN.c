@@ -2353,7 +2353,8 @@ void OvsRecvPacket(OPENVPN_SERVER *s, LIST *recv_packet_list, UINT protocol)
 
 								// Return the PUSH_REPLY
 								Format(option_str, sizeof(option_str),
-								       "PUSH_REPLY,ping %u,ping-restart %u",
+								       //SHAKUROV// "PUSH_REPLY,ping %u,ping-restart %u",
+									   "PUSH_REPLY",
 								       s->PingSendInterval / 1000,
 								       s->Timeout / 1000);
 
